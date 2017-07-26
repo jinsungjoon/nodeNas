@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	.table{
+		box-sizing:conten;
+		display: flex;
+		flex-flow:row wrap;
+		justify-content:center;
+		width: 100%;
+		border-collapse:collapse; 
+	}
+	.table > .thead{
+		display: flex;
+		flex-flow:row wrap;
+		justify-content:flex-start;
+		width: 100%;
+		border-collapse:collapse; 
+		background-color: #f5f5f5;
+		border: 1px solid #ddd;
+	}
+	.table > .thead > span{
+		font-size: 15px;
+		font-weight: bold;
+		padding: 5px;
+		width: 33%
+	}
+	.table > .thead > span:FIRST-CHILD{
+		display: flex;
+		justify-content:center;
+		border-left: 1px solid #ddd;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		border-collapse:collapse; 
+		background-color: #f5f5f5
+	}
+	.table > .thead > span:last-CHILD{
+		display: flex;
+		justify-content:center;
+		border-top: 1px solid #ddd;
+		border-right: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		border-collapse:collapse; 
+		background-color: #f5f5f5
+	}
+	.table > .thead > span{
+		display: flex;
+		justify-content:center;
+		border-left: 1px solid #ddd;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		border-collapse:collapse; 
+		background-color: #f5f5f5;
+		box-sizing: border-box;
+		
+	}
+	.table > .thead > span:nth-child(3n){
+		display: flex;
+		justify-content:center;
+		border-left: 1px solid #ddd;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		border-collapse:collapse; 
+		background-color: #f5f5f5;
+		box-sizing: border-box;
+		width: 34%;
+		
+	}
+	/* 태블릿용 CSS */
+@media all and (min-width:768px){
+	.table > .thead > span{
+		font-size: 15px;
+		font-weight: bold;
+		padding: 5px;
+		width: 25%;
+		box-sizing: border-box;
+	}
+	.table > .thead > span:nth-child(3n){
+		display: flex;
+		justify-content:center;
+		border-left: 1px solid #ddd;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		border-collapse:collapse; 
+		background-color: #f5f5f5;
+		box-sizing: border-box;
+		width: 25%;
+	}
+}
+/* PC용 CSS */
+@media all and (min-width:960px){
+	.table > .thead > span{
+		font-size: 15px;
+		font-weight: bold;
+		padding: 5px;
+		width: 10%;
+		box-sizing: border-box;
+	}
+	.table > .thead > span:nth-child(3n){
+		display: flex;
+		justify-content:center;
+		border-left: 1px solid #ddd;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		border-collapse:collapse; 
+		background-color: #f5f5f5;
+		box-sizing: border-box;
+		width: 10%;
+	}
+}
+</style>
+</head>
+<body>
+	<div class="table">
+		<div class='thead'>
+			<span class='col'>col1</span>
+			<span class='col'>col1</span>
+			<span class='col'>col1</span>
+			<span class='col'>col1</span>
+			<span class='col'>col1</span>
+			<span class='col'>col1</span>
+			<span class='col'>col1</span>
+			<span class='col'>col1</span>
+			<span class='col'>col1</span>
+			<span class='col'>col1</span>
+		</div>
+	</div>
+</body>
+</html>
