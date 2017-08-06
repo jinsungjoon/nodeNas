@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.nwModal-content{
+		display:flex;
+		flex-flow:row wrap;
+		position: relative;
+		width: 300px;
+		height: auto;
+		border: 1px solid #dedede;
+	    border-radius: 6px;
+	}
+	.nwModal-header{
+		display:flex;
+		justify-content: space-between;
+		padding: 15px;
+		width:100%;
+    	border-bottom: 1px solid #e5e5e5;
+	}
+	.nwModal-header h4{ 
+		display:flex;
+		flex-direction:flex-start;
+	}
+	.nwModal-header button{ 
+		display:flex;
+		flex-direction:flex-end;
+	}
+	.nwModal-body{
+		position: relative;
+    	display:flex;
+		padding: 15px;
+		width:100%;
+	}
+	.nwModal-footer{
+	    display:flex;
+	    justify-content:flex-end;
+		padding: 15px;
+		width:100%;
+	    border-top: 1px solid #e5e5e5;
+	}
+	.close{
+		    float: right;
+		    font-size: 21px;
+		    font-weight: 700;
+		    line-height: 1;
+		    color: #000;
+		    text-shadow: 0 1px 0 #fff;
+		    filter: alpha(opacity=20);
+		    opacity: .2;
+	}
+	button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+     background-color: #fff;
+    border-color: #ccc;
+}
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #204d74;
+    border-color: #122b40;
+}
+</style>
+</head>
+<body>
+	<div class="nwModal-content">
+		<div class="nwModal-header">
+			<h4 class="nwModal-title">nwModal title</h4>
+			<button type="button" class="close" data-dismiss="nwModal" aria-label="Close">
+				<span aria-hidden="true">×</span>
+			</button>
+		</div>
+		<div class="nwModal-body">
+			<p>One fine body…</p>
+		</div>
+		<div class="nwModal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="nwModal">Close</button>
+			<button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	</div>
+</body>
+</html>
